@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="GoogleOAuth2.0 Test Suite">
+    <test verbose="2" preserve-order="true" name="Gmail Api By Rest Assured ">
+        <classes>
+            <class name="com.Google.oauth.tests.GmailApi">
+            <methods>
+            <include name="UserProfile"/>
+            <include name="UserSendMessage"/>
+                <include name="UserProfileWithExpiredToken"/>
+        </methods>
+        </class>
+        </classes>
+    </test>
+</suite>
